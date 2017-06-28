@@ -171,7 +171,7 @@ namespace GitVersionTree
             Result = Execute(Reg.Read("GitPath"), "--git-dir \"" + Reg.Read("GitRepositoryPath") + "\\.git\" log --all --pretty=format:\"%h|%p|%d\"");
             if (String.IsNullOrEmpty(Result))
             {
-                Status("Unable to get get branch or branch empty ...");
+                Status("Unable to get branch or branch empty ...");
             }
             else
             {
@@ -193,7 +193,7 @@ namespace GitVersionTree
             Result = Execute(Reg.Read("GitPath"), "--git-dir \"" + Reg.Read("GitRepositoryPath") + "\\.git\" for-each-ref --format=\"%(objectname:short)|%(refname:short)\" "); //refs/heads/
             if (String.IsNullOrEmpty(Result))
             {
-                Status("Unable to get get branch or branch empty ...");
+                Status("Unable to get branch or branch empty ...");
             }
             else
             {
